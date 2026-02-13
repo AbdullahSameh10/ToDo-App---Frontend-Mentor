@@ -1,13 +1,13 @@
-import { clearCompletedTasks } from "./JavaScript/ClearCompleted";
-import { getDeviceType, getModeFromDB, toggleMode } from "./JavaScript/DarkMode";
-import { getDataFromDB } from "./JavaScript/DataHundling";
-import { InitDragAndDrop } from "./JavaScript/Drag&Drop";
-import { InitAddBarFunctions, InitTasksListners } from "./JavaScript/InitListeners";
-import { updateTasksLeftCounter } from "./JavaScript/TasksCounter";
-import { filterTasks } from "./JavaScript/TasksFiltering";
-import { refreshTasksInVar } from "./JavaScript/TasksHundling";
-import { UpdateList } from "./JavaScript/UpdateList";
-import { clearCompletedBtn, HTML_ELEMENT, KEY, TasksListElement } from "./JavaScript/Variables";
+import { clearCompletedTasks } from "./JavaScript/ClearCompleted.js";
+import { getDeviceType, getModeFromDB, toggleMode } from "./JavaScript/DarkMode.js";
+import { getDataFromDB } from "./JavaScript/DataHundling.js";
+import { InitDragAndDrop } from "./JavaScript/Drag&Drop.js";
+import { InitAddBarFunctions, InitTasksListners } from "./JavaScript/InitListeners.js";
+import { updateTasksLeftCounter } from "./JavaScript/TasksCounter.js";
+import { filterTasks } from "./JavaScript/TasksFiltering.js";
+import { refreshTasksInVar } from "./JavaScript/TasksHundling.js";
+import { UpdateList } from "./JavaScript/UpdateList.js";
+import { clearCompletedBtn, HTML_ELEMENT, KEY, TasksListElement } from "./JavaScript/Variables.js";
 
 //----------------------- script.js -----------------------//
 const InitBackgroundImage = () => {
@@ -44,4 +44,5 @@ InitDragAndDrop();
 TasksListElement.addEventListener("dragenter", (e) => e.preventDefault());
 
 window.addEventListener("resize", () => InitBackgroundImage());
+
 //---------------------------------------------------------//
