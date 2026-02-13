@@ -1,5 +1,5 @@
-import { InitDragAndDrop } from "./Drag&Drop";
-import { TasksListElement } from "./Variables";
+import { InitDragAndDrop } from "./Drag&Drop.js";
+import { TasksListElement } from "./Variables.js";
 
 //--------------------- UpdateList.js ---------------------//
 export const UpdateList = (tasks) => {
@@ -23,4 +23,5 @@ export const UpdateList = (tasks) => {
   });
   InitDragAndDrop();
 };
+
 //---------------------------------------------------------//
