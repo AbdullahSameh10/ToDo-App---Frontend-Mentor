@@ -1,0 +1,87 @@
+//--------------------------------------------//
+.bgImage {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 48rem;
+  margin: 7rem auto 0;
+}
+
+.checkbox, .addTaskBar__checkbox{
+  min-width: 2.25rem;
+  max-width: 2.25rem;
+  min-height: 2.25rem;
+  max-height: 2.25rem;
+
+  border-radius: 50%;
+  border: 0.1rem solid var(--border-color);
+  margin-right: 2.25rem;
+
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+
+    min-width: 2.25rem;
+    max-width: 2.25rem;
+    min-height: 2.25rem;
+    max-height: 2.25rem;
+
+    background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    -webkit-mask: radial-gradient(circle, transparent 58%, #000 59%);
+    mask: radial-gradient(circle, transparent 58%, #000 59%);
+
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+    left: -0.1rem;
+    top: -0.1rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1rem;
+    width: 1rem;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &.active {
+    border-color: transparent;
+
+    &::after {
+      opacity: 1;
+      -webkit-mask: none;
+      mask: none;
+      z-index: 1;
+    }
+
+    &::before {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@media (max-width: 470px) {
+  html{
+    font-size: 52.5%;
+  }
+  body{
+    margin: 0 3rem;
+  }
+  .container{
+    margin-top: 5.5rem;
+    width: 100%;
+    position: relative;
+  }
+  .checkbox, .addTaskBar__checkbox{
+    margin-right: 1.5rem;
+  }
+  .header__logo{
+    font-size: 3rem;
+  }
+  .addTaskBar{
+    height: 5.5rem;
+    padding: 0 2.25rem;
+    &__input {
+      font-size: 1.35rem;
+      padding-top: 0;
+    }
+  }
+  .TasksList{
+    &__taskContent {
+      padding: 3.05rem 2.25rem;
+      &__valueContent {
+        font-size: 1.35rem;
+      }
+    }
+    &__taskContent__valueContent__deleteIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  .tasksContainer__footer{
+    padding: 2.25rem 2.5rem;
+    font-size: 1.3rem;
+    position: relative;
+    .options{
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      height: 5.75rem;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      background-color: var(--sub-background-color);
+      font-size: 1.55rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0px 1rem 4rem var(--shadow-color);
+      gap: 2.25rem;
+    }
+  }
+  .dragAndDropLabel {
+    position: absolute;
+    bottom: -24rem;
+    width: 100%;
+    font-size: 1.55rem;
+    padding-bottom: 5rem;
+  }
+};

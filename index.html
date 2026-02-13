@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <img src="./images/bg-desktop-light.jpg" alt="Backround Image" class="bgImage">
+
+  <main class="container">
+
+    <header class="header">
+      <h1 class="header__logo">TODO</h1>
+      <img
+        src="./images/icon-moon.svg"
+        alt=""
+        class="header__themeBtn"
+        role="button"
+        tabindex="0"
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      />
+    </header>
+
+    <div class="addTaskBar">
+      <div class="addTaskBar__checkbox" role="checkbox" tabindex="0" aria-checked="false" aria-label="Mark new task as completed"></div>
+      <input class="addTaskBar__input" type="text" placeholder="Create a new todo..." aria-label="New todo text" />
+    </div>
+
+    <div class="tasksContainer">
+
+      <ul class="TasksList">
+      </ul>
+
+      <div class="tasksContainer__footer">
+        <div class="itemsLeft">
+          <span class="itemsLeft__Number" aria-live="polite"></span>
+          <label class="itemsLeft__Label"> items left</label>
+        </div>
+
+        <div class="options">
+          <span class="option active" data-name="all" role="button" tabindex="0">All</span>
+          <span class="option" data-name="active" role="button" tabindex="0">Active</span>
+          <span class="option" data-name="completed" role="button" tabindex="0">Completed</span>
+        </div>
+
+        <span class="tasksContainer__footer__clearCompleted" role="button" tabindex="0" aria-label="Clear completed tasks" > 
+          Clear Completed 
+        </span>
+      </div>
+
+    </div>
+
+    <p class="dragAndDropLabel">Drag and drop to reorder list</p>
+  </main>
+
+  <script src="./script.js" type="module"></script>
+</body>
+</html>
