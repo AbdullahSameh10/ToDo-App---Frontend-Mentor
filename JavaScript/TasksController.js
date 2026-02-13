@@ -1,11 +1,11 @@
-import { toggleCheckboxA11y } from "./Accessibility";
-import { getDataFromDB, syncDataToDB } from "./DataHundling";
-import { InitTasksListners } from "./InitListeners";
-import { updateTasksLeftCounter } from "./TasksCounter";
-import { getTasksFromVar, setTasksToVar } from "./TasksHundling";
-import { UpdateList } from "./UpdateList";
-import { addTaskBarCheckbox, KEY, newTaskInput } from "./Variables";
-import { AddTaskToListVar, DeleteTaskFromListVar } from "./VarsOperations";
+import { toggleCheckboxA11y } from "./Accessibility.js";
+import { getDataFromDB, syncDataToDB } from "./DataHundling.js";
+import { InitTasksListners } from "./InitListeners.js";
+import { updateTasksLeftCounter } from "./TasksCounter.js";
+import { getTasksFromVar, setTasksToVar } from "./TasksHundling.js";
+import { UpdateList } from "./UpdateList.js";
+import { addTaskBarCheckbox, KEY, newTaskInput } from "./Variables.js";
+import { AddTaskToListVar, DeleteTaskFromListVar } from "./VarsOperations.js";
 
 //------------------- TasksController.js ------------------//
 export const CompleteTask = (taskElement, index) => {
@@ -49,4 +49,5 @@ export const AddTask = () => {
   newTaskInput.value = "";
   addTaskBarCheckbox.classList.remove("active");
 };
+
 //---------------------------------------------------------//
