@@ -1,8 +1,8 @@
 //-------------------- InitListners.js --------------------//
 
-import { addTaskBarCheckbox, newTaskInput } from "./Variables";
-import { CompleteTask, DeleteTask, AddTask} from "./TasksController";
-import { isKeyboardClick, toggleCheckboxA11y } from "./Accessibility";
+import { addTaskBarCheckbox, newTaskInput } from "./Variables.js";
+import { CompleteTask, DeleteTask, AddTask} from "./TasksController.js";
+import { isKeyboardClick, toggleCheckboxA11y } from "./Accessibility.js";
 
 const toggleAddBarCheckbox = () => {
   const isActive = !addTaskBarCheckbox.classList.contains("active");
@@ -50,4 +50,5 @@ export const InitTasksListners = () => {
   });
   //=======================================================//
 };
+
 //---------------------------------------------------------//
