@@ -1,5 +1,5 @@
-import { refreshTasksInVar } from "./TasksHundling";
-import { TasksListElement } from "./Variables";
+import { refreshTasksInVar } from "./TasksHundling.js";
+import { TasksListElement } from "./Variables.js";
 
 //------------------- ClearCompleted.js -------------------//
 export const clearCompletedTasks = () =>{
@@ -7,4 +7,5 @@ export const clearCompletedTasks = () =>{
   completedTasks.forEach((task) => task.remove());
   refreshTasksInVar();
 };
+
 //---------------------------------------------------------//
