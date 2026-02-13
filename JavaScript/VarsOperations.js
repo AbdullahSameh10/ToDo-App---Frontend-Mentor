@@ -1,6 +1,6 @@
-import { syncDataToDB } from "./DataHundling";
-import { getTasksFromVar, setTasksToVar } from "./TasksHundling";
-import { KEY } from "./Variables";
+import { syncDataToDB } from "./DataHundling.js";
+import { getTasksFromVar, setTasksToVar } from "./TasksHundling.js";
+import { KEY } from "./Variables.js";
 
 //------------------- VarsOperations.js ------------------//
 export const AddTaskToListVar = (tasksList, newTask) => {
@@ -14,4 +14,5 @@ export const DeleteTaskFromListVar = (tasksList, index) => {
   setTasksToVar(tasksList);
   syncDataToDB(KEY, getTasksFromVar());
 };
+
 //---------------------------------------------------------//
