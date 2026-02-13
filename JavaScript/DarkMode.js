@@ -1,6 +1,6 @@
-import { isKeyboardClick } from "./Accessibility";
-import { getDataFromDB, syncDataToDB } from "./DataHundling";
-import { HTML_ELEMENT, toggleThemeBtn } from "./Variables";
+import { isKeyboardClick } from "./Accessibility.js";
+import { getDataFromDB, syncDataToDB } from "./DataHundling.js";
+import { HTML_ELEMENT, toggleThemeBtn } from "./Variables.js";
 
 //---------------------- DarkMode.js ----------------------//
 export const getDeviceType = () => window.innerWidth <= 470 ? "mobile" : "desktop";
@@ -33,4 +33,5 @@ toggleThemeBtn.addEventListener("keydown", (e) => {
 export const toggleMode = () => toggleThemeBtn.onclick = () => toggleThemeFunc();
 
 export const getModeFromDB = () => getDataFromDB("Dark-Mode") && toggleThemeFunc();
+
 //---------------------------------------------------------//
