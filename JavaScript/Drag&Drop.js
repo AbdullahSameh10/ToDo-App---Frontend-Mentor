@@ -1,8 +1,8 @@
-import { getDataFromDB, syncDataToDB } from "./DataHundling";
-import { InitTasksListners } from "./InitListeners";
-import { getTasksFromVar, setTasksToVar } from "./TasksHundling";
-import { UpdateList } from "./UpdateList";
-import { KEY, TasksListElement } from "./Variables";
+import { getDataFromDB, syncDataToDB } from "./DataHundling.js";
+import { InitTasksListners } from "./InitListeners.js";
+import { getTasksFromVar, setTasksToVar } from "./TasksHundling.js";
+import { UpdateList } from "./UpdateList.js";
+import { KEY, TasksListElement } from "./Variables.js";
 
 //---------------------- Drag&Drop.js ---------------------//
 const saveSortedDataToDB = () => {
@@ -49,5 +49,6 @@ export const InitDragAndDrop = () => {
     TasksListElement.insertBefore(DraggedTask, nextSibiling);
   });
 };
+
 
 //---------------------------------------------------------//
