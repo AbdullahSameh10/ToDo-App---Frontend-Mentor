@@ -1,4 +1,4 @@
-import { options, TasksListElement } from "./Variables";
+import { options, TasksListElement } from "./Variables.js";
 
 //------------------- TasksFiltring.js --------------------//
 export const filterTasks = () => {
@@ -19,4 +19,5 @@ export const filterTasks = () => {
     });
   });
 };
+
 //---------------------------------------------------------//
