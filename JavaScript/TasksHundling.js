@@ -1,6 +1,6 @@
-import { syncDataToDB } from "./DataHundling";
-import { InitTasksListners } from "./InitListeners";
-import { KEY, TasksListElement } from "./Variables";
+import { syncDataToDB } from "./DataHundling.js";
+import { InitTasksListners } from "./InitListeners.js";
+import { KEY, TasksListElement } from "./Variables.js";
 
 let tasks = [];
 
@@ -21,4 +21,5 @@ export const refreshTasksInVar = () => {
   syncDataToDB(KEY, getTasksFromVar());
   InitTasksListners();
 };
+
 //---------------------------------------------------------//
